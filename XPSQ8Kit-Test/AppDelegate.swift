@@ -34,13 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let stage = Stage(stageGroup: stageGroup, stageName: "X")
         
         
-        do {
-            try stageGroup.moveRelative(stage: stage, targetDisplacement: 10)
-        } catch {
-                   print(error)
-               }
-        
-        /*
+        /*  original command
         do {
             try controller?.group.moveRelative(stageName: "M.X", targetDisplacement: 10)
             print("Move Tried")
@@ -48,6 +42,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             print(error)
         }
         */
+        
+        /* updated command that was moved to StageGroup
+        do {
+            try stageGroup.moveRelative(stage: stage, targetDisplacement: -5)
+        } catch {
+            print(error)
+        }
+        */
+        
+
+        // Expanded stage so that you can call moveRelative directly on the Stages
+        do {
+            try stage.moveRelative(targetDisplacement: -5)
+        } catch {
+            print(error)
+        }
+        
+
     }
 }
 
