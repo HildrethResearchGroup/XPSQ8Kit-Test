@@ -7,13 +7,15 @@
 //
 
 import Cocoa
+import XPSQ8Kit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
-
+    @IBOutlet weak var runTest: NSButton!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
@@ -23,5 +25,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 
+    @IBAction func runTest(_ sender: Any) {
+        let controller = XPSQ8Controller(address: "192.168.0.254", port: 5001)
+
+
+
+        do {
+            try controller?.group.moveRelative(stageName: "M.X", targetDisplacment: 10)
+        } catch {
+            print(error)
+        }
+        
+    }
 }
 
