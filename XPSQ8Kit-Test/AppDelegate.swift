@@ -26,16 +26,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     @IBAction func runTest(_ sender: Any) {
+        
         let controller = XPSQ8Controller(address: "192.168.0.254", port: 5001)
-
-
-
+        
+        
+        let stageGroup = StageGroup(controller: controller, stageGroupName: "M")
+        let stage = Stage(stageGroup: stageGroup, stageName: "X")
+        
+        
         do {
-            try controller?.group.moveRelative(stageName: "M.X", targetDisplacment: 10)
+            try stageGroup.moveRelative(stage: stage, targetDisplacement: 10)
+        } catch {
+                   print(error)
+               }
+        
+        /*
+        do {
+            try controller?.group.moveRelative(stageName: "M.X", targetDisplacement: 10)
+            print("Move Tried")
         } catch {
             print(error)
         }
-        
+        */
     }
 }
 

@@ -11,7 +11,6 @@
 		C0EF396F23DF5D0C00427C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EF396E23DF5D0C00427C80 /* Assets.xcassets */; };
 		C0EF397223DF5D0C00427C80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0EF397023DF5D0C00427C80 /* MainMenu.xib */; };
 		C0EF397E23DF5D0C00427C80 /* XPSQ8Kit_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF397D23DF5D0C00427C80 /* XPSQ8Kit_TestTests.swift */; };
-		C0EF398923DF602D00427C80 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF398823DF602D00427C80 /* MainViewController.swift */; };
 		C0EF398C23DF60BC00427C80 /* XPSQ8Kit in Frameworks */ = {isa = PBXBuildFile; productRef = C0EF398B23DF60BC00427C80 /* XPSQ8Kit */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		C0EF397923DF5D0C00427C80 /* XPSQ8Kit-TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XPSQ8Kit-TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EF397D23DF5D0C00427C80 /* XPSQ8Kit_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPSQ8Kit_TestTests.swift; sourceTree = "<group>"; };
 		C0EF397F23DF5D0C00427C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0EF398823DF602D00427C80 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 		C0EF396023DF5D0B00427C80 = {
 			isa = PBXGroup;
 			children = (
-				C0EF398823DF602D00427C80 /* MainViewController.swift */,
 				C0EF396B23DF5D0B00427C80 /* XPSQ8Kit-Test */,
 				C0EF397C23DF5D0C00427C80 /* XPSQ8Kit-TestTests */,
 				C0EF396A23DF5D0B00427C80 /* Products */,
@@ -204,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0EF396D23DF5D0B00427C80 /* AppDelegate.swift in Sources */,
-				C0EF398923DF602D00427C80 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +354,7 @@
 				CODE_SIGN_ENTITLEMENTS = "XPSQ8Kit-Test/XPSQ8Kit_Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Z553N3QGMH;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "XPSQ8Kit-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,7 +374,7 @@
 				CODE_SIGN_ENTITLEMENTS = "XPSQ8Kit-Test/XPSQ8Kit_Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Z553N3QGMH;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "XPSQ8Kit-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
