@@ -33,24 +33,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let stageGroup = StageGroup(controller: controller, stageGroupName: "M")
         let stage = Stage(stageGroup: stageGroup, stageName: "X")
         
-        
-        /*  original command
-        do {
-            try controller?.group.moveRelative(stageName: "M.X", targetDisplacement: 10)
-            print("Move Tried")
-        } catch {
-            print(error)
-        }
-        */
-        
-        /* updated command that was moved to StageGroup
-        do {
-            try stageGroup.moveRelative(stage: stage, targetDisplacement: -5)
-        } catch {
-            print(error)
-        }
-        */
-        
 
         // Expanded stage so that you can call moveRelative directly on the Stages
         do {
@@ -59,6 +41,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             print(error)
         }
         
+        
+        do {
+            print("Testing gathering.getCurrentNumber() function")
+            let tuple = try controller?.gathering.getCurrentNumber()
+            let currentNumber = tuple?.currentNumber
+            let maximumSamples = tuple?.maximumSamples
+            print("currentNumber = \(currentNumber ?? -1)")
+            print("maximumSamples = \(maximumSamples ?? -1)")
+        } catch {print(error)}
 
     }
 }

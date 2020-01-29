@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4447F15323DF8A39001A81C5 /* XPSQ8Kit in Frameworks */ = {isa = PBXBuildFile; productRef = 4447F15223DF8A39001A81C5 /* XPSQ8Kit */; };
 		C0EF396D23DF5D0B00427C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF396C23DF5D0B00427C80 /* AppDelegate.swift */; };
 		C0EF396F23DF5D0C00427C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EF396E23DF5D0C00427C80 /* Assets.xcassets */; };
 		C0EF397223DF5D0C00427C80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0EF397023DF5D0C00427C80 /* MainMenu.xib */; };
 		C0EF397E23DF5D0C00427C80 /* XPSQ8Kit_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF397D23DF5D0C00427C80 /* XPSQ8Kit_TestTests.swift */; };
-		C0EF398C23DF60BC00427C80 /* XPSQ8Kit in Frameworks */ = {isa = PBXBuildFile; productRef = C0EF398B23DF60BC00427C80 /* XPSQ8Kit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0EF398C23DF60BC00427C80 /* XPSQ8Kit in Frameworks */,
+				4447F15323DF8A39001A81C5 /* XPSQ8Kit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,12 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4447F15123DF8A39001A81C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0EF396023DF5D0B00427C80 = {
 			isa = PBXGroup;
 			children = (
 				C0EF396B23DF5D0B00427C80 /* XPSQ8Kit-Test */,
 				C0EF397C23DF5D0C00427C80 /* XPSQ8Kit-TestTests */,
 				C0EF396A23DF5D0B00427C80 /* Products */,
+				4447F15123DF8A39001A81C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +119,7 @@
 			);
 			name = "XPSQ8Kit-Test";
 			packageProductDependencies = (
-				C0EF398B23DF60BC00427C80 /* XPSQ8Kit */,
+				4447F15223DF8A39001A81C5 /* XPSQ8Kit */,
 			);
 			productName = "XPSQ8Kit-Test";
 			productReference = C0EF396923DF5D0B00427C80 /* XPSQ8Kit-Test.app */;
@@ -468,14 +476,14 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/HildrethResearchGroup/XPSQ8Kit.git";
 			requirement = {
-				branch = stagesDevelopment;
+				branch = newFunctions;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C0EF398B23DF60BC00427C80 /* XPSQ8Kit */ = {
+		4447F15223DF8A39001A81C5 /* XPSQ8Kit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C0EF398A23DF60BC00427C80 /* XCRemoteSwiftPackageReference "XPSQ8Kit" */;
 			productName = XPSQ8Kit;
