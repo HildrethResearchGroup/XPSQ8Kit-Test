@@ -42,13 +42,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         
+        
         do {
-            print("Testing gathering.getCurrentNumber() function")
-            let tuple = try controller?.gathering.getCurrentNumber()
-            let currentNumber = tuple?.currentNumber
-            let maximumSamples = tuple?.maximumSamples
-            print("currentNumber = \(currentNumber ?? -1)")
-            print("maximumSamples = \(maximumSamples ?? -1)")
+            try controller?.gathering.reset()
         } catch {print(error)}
 
     }
