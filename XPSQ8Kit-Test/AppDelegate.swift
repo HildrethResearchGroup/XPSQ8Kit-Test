@@ -35,18 +35,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
 
         // Expanded stage so that you can call moveRelative directly on the Stages
+        /*
         do {
             try stage.moveRelative(targetDisplacement: -5)
         } catch {
             print(error)
         }
-        
+        */
         
         
         do {
-            try controller?.gathering.reset()
-        } catch {print(error)}
-
+            try controller?.group.moveAbsolute(stage: "M.X", toLocation: 30)
+        } catch {
+            print(error)
+        }
+        
+        do {
+            try stage.moveAbsolute(toLocation: -10)
+        } catch {
+            print(error)
+        }
+        
+            
     }
 }
 
