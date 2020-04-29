@@ -44,17 +44,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         */
         
         
+        /*
         do {
             try controller?.group.moveAbsolute(stage: "M.X", toLocation: 30)
+            print("Moving stage to 30")
+        } catch {
+            print(error)
+        }*/
+        
+        
+        do {
+            if let current = try controller?.group.jog.getCurrent(stage: "M.X") {
+                let velocity = current.velocity
+                let acceleration = current.acceleration
+                print("Velocity = \(velocity)")
+                print("Acceleartion = \(acceleration)")
+            } else { print("current = nil") }
         } catch {
             print(error)
         }
         
         do {
-            try stage.moveAbsolute(toLocation: -10)
+            if let current = try stage.jogGetCurrent() {
+                let velocity = current.velocity
+                let acceleration = current.acceleration
+                print("Velocity = \(velocity)")
+                print("Acceleartion = \(acceleration)")
+            } else { print("current = nil") }
         } catch {
             print(error)
         }
+        
+        /*
+        do {
+            try stage.moveAbsolute(toLocation: -10)
+            print("Moving stage to -10")
+        } catch {
+            print(error)
+        }
+ */
+        
+        
         
             
     }
